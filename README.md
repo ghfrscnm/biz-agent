@@ -37,6 +37,12 @@ flowchart LR
 - **Память** (`agent/storage.py`): SQLite — история диалога на каждого клиента, заявки, передачи менеджеру и журнал всех вызовов инструментов.
 - **Модель**: любая OpenAI-совместимая с поддержкой tools через OpenRouter (по умолчанию `openai/gpt-4o-mini`).
 
+## Как выглядит
+
+<img width="548" height="1280" alt="photo_2026-10-20_10-20-03" src="https://github.com/user-attachments/assets/a048559c-f9d5-462a-bed4-9d1f98151d8b" />
+<img width="548" height="1280" alt="photo_2026-10-20_10-20-03 (2)" src="https://github.com/user-attachments/assets/de4c58ca-75dc-4437-b830-8f43623d09d6" />
+
+
 ## Для менеджера
 
 - Новые заявки и эскалации приходят в чат `MANAGER_CHAT_ID`.
