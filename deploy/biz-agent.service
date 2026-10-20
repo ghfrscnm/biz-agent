@@ -1,0 +1,15 @@
+[Unit]
+Description=biz-agent — ИИ-менеджер в Telegram
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/biz-agent
+ExecStart=/root/biz-agent/venv/bin/python -m agent.bot
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
